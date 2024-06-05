@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./fav.png" type="image/x-icon">
+    <title>Shaurya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="top">
+        <h1>
+            Shaurya
+        </h1>
+        <div class="menuToggle"></div>
+        <nav>
+            <ul>
+                <li><a href="https://shauryafest.in/" class="navCom">Home</a></li>
+                <li><a href="https://shauryafest.in/events" class="navCom">Events</a></li>
+                <li><a href="https://shauryafest.in/sponsors" class="navCom">Sponsors</a></li>
+                <li><a href="#" class="navCom" id="signup">Signup</a></li>
+                <li><a href="#"><div id="groove">
+                    <div id="slider"></div>
+                </div></a>
+                    
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <form action="/" method="post" id="form" class="show">
+            <div class="name">
+                <input type="text" name="name" placeholder="Enter your name" id ="name" required>
+                <div class="error"></div>
+            </div>
+            <div>
+                <input type="email" name="email" id="email" placeholder="Enter your email" required>
+                <div class="error"></div>
+            </div>
+            <div>
+                <input type="number" name="phoneNumber" id="number" placeholder="Phone Number" required>
+                <div class="error"></div>
+            </div>
+            <div>
+                <input type="password" name="password" id="password" placeholder="Set password"  required>
+                <div class="error"></div>
+            </div>
+            <div>
+                <input type="password2" name="password2" id="password2" placeholder="Confirm password" required>
+                <div class="error"></div>
+            </div>
+            <div class="gender" id="gender">
+                <label for="gender" >Gender:</label>
+                <label for="gender">Male:</label>
+                <input type="radio" name="gender" value="male" checked="checked">
+                <label for="gender">Female:</label>
+                <input type="radio" name="gender" value="male">
+                <label for="gender">Others:</label>
+                <input type="radio" name="gender" value="male">
+                <div class="error"></div>
+            </div>
+            
+            <div class="sport">
+                <select name="sport" id="sports">
+                    <option value="soccer">soccer</option>
+                    <option value="cricket">cricket</option>
+                    <option value="baseball">baseball</option>
+                    <option value="tabletennis">tabletennis</option>
+                    <option value="badminton">badminton</option>
+                </select>
+                <div class="error"></div>
+            </div>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
